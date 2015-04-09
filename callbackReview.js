@@ -1,32 +1,45 @@
 /* Declare and Define the functions here that will make the function calls below work properly */
 
-
+var first = function(arr){
+  return arr[0]; 
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 first(names, function(firstName){
   console.log('The first name in names is ', firstName)
 });
 
-
+//WORKS 
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
-
+var last = function(arr){
+  i = arr.length - 1; 
+  return arr[i]; 
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 last(names, function(lastName){
   console.log('The last name in names is ', lastName);
 });
 
-
+//WORKS
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 //have the contains function return a boolean value for if the name is in the array or not.
 
+var contains = function(arr, str){
+  for(var i=0; i<arr.length; i++){
+    if(arr[i] === str) {
+      return true; 
+    }
+  }
+  return false; 
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 contains('Colt', names, function(yes){
