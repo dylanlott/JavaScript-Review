@@ -50,13 +50,20 @@ contains('Colt', names, function(yes){
   }
 });
 
-
+//Checked // works 
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
+var map = function(arr, num){
+  var newArr = []; 
+  for(var i = 0; i<arr.length; i++){
+    newArr.push(arr[i] * 2); 
+  }
+  return newArr; 
+}
 
 var numbers = [1,2,3,4,5];
 //Produces a new array of values by mapping each value in list through a transformation function
@@ -64,7 +71,7 @@ map(numbers, function(num){
   return num * 2; //returns an array of [2,4,6,8,10]
 });
 
-
+//
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
